@@ -12,6 +12,7 @@
         table {
             width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,14 +20,38 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgrey;
+        }
+
+
         td.num {
             text-align: right;
         }
 
-        thead, tfoot {
-            background-color: gray;
-            color: white;
-        }
+        
 
     </style>
 </head>
@@ -35,6 +60,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -43,10 +69,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -161,10 +188,16 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, dignissimos. Molestias, impedit odio eaque qui mollitia nihil consequatur commodi corrupti fugit aut quasi tempore illum, vel tempora asperiores, quam libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eaque tempora inventore id voluptate aspernatur eius, nostrum facere ullam facilis at optio commodi aliquid dolores sapiente cumque? Recusandae, quis placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur assumenda provident tempore hic voluptas accusantium tempora accusamus. Asperiores at reprehenderit, magnam deleniti id sunt, nam adipisci voluptate ab odit inventore? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat expedita earum aperiam, excepturi voluptate ratione. Consequuntur provident quo dolor, libero voluptate reprehenderit vitae eos corrupti impedit, sint perferendis unde quae.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, dignissimos. Molestias, impedit odio eaque qui mollitia nihil consequatur commodi corrupti fugit aut quasi tempore illum, vel tempora asperiores, quam libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eaque tempora inventore id voluptate aspernatur eius, nostrum facere ullam facilis at optio commodi aliquid dolores sapiente cumque? Recusandae, quis placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur assumenda provident tempore hic voluptas accusantium tempora accusamus. Asperiores at reprehenderit, magnam deleniti id sunt, nam adipisci voluptate ab odit inventore? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat expedita earum aperiam, excepturi voluptate ratione. Consequuntur provident quo dolor, libero voluptate reprehenderit vitae eos corrupti impedit, sint perferendis unde quae.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, dignissimos. Molestias, impedit odio eaque qui mollitia nihil consequatur commodi corrupti fugit aut quasi tempore illum, vel tempora asperiores, quam libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eaque tempora inventore id voluptate aspernatur eius, nostrum facere ullam facilis at optio commodi aliquid dolores sapiente cumque? Recusandae, quis placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur assumenda provident tempore hic voluptas accusantium tempora accusamus. Asperiores at reprehenderit, magnam deleniti id sunt, nam adipisci voluptate ab odit inventore? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat expedita earum aperiam, excepturi voluptate ratione. Consequuntur provident quo dolor, libero voluptate reprehenderit vitae eos corrupti impedit, sint perferendis unde quae.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, dignissimos. Molestias, impedit odio eaque qui mollitia nihil consequatur commodi corrupti fugit aut quasi tempore illum, vel tempora asperiores, quam libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eaque tempora inventore id voluptate aspernatur eius, nostrum facere ullam facilis at optio commodi aliquid dolores sapiente cumque? Recusandae, quis placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur assumenda provident tempore hic voluptas accusantium tempora accusamus. Asperiores at reprehenderit, magnam deleniti id sunt, nam adipisci voluptate ab odit inventore? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat expedita earum aperiam, excepturi voluptate ratione. Consequuntur provident quo dolor, libero voluptate reprehenderit vitae eos corrupti impedit, sint perferendis unde quae.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, dignissimos. Molestias, impedit odio eaque qui mollitia nihil consequatur commodi corrupti fugit aut quasi tempore illum, vel tempora asperiores, quam libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eaque tempora inventore id voluptate aspernatur eius, nostrum facere ullam facilis at optio commodi aliquid dolores sapiente cumque? Recusandae, quis placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur assumenda provident tempore hic voluptas accusantium tempora accusamus. Asperiores at reprehenderit, magnam deleniti id sunt, nam adipisci voluptate ab odit inventore? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat expedita earum aperiam, excepturi voluptate ratione. Consequuntur provident quo dolor, libero voluptate reprehenderit vitae eos corrupti impedit, sint perferendis unde quae.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, dignissimos. Molestias, impedit odio eaque qui mollitia nihil consequatur commodi corrupti fugit aut quasi tempore illum, vel tempora asperiores, quam libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eaque tempora inventore id voluptate aspernatur eius, nostrum facere ullam facilis at optio commodi aliquid dolores sapiente cumque? Recusandae, quis placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur assumenda provident tempore hic voluptas accusantium tempora accusamus. Asperiores at reprehenderit, magnam deleniti id sunt, nam adipisci voluptate ab odit inventore? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat expedita earum aperiam, excepturi voluptate ratione. Consequuntur provident quo dolor, libero voluptate reprehenderit vitae eos corrupti impedit, sint perferendis unde quae.</p>
 </body>
 </html>
