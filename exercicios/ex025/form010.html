@@ -6,12 +6,12 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Exemplo de Formilário</h1>
+    <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
 
         <p>
-            <label for="iano">Em que ano você nasceu? </label>
-            <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calcidade()">
+            <label for="iano">Em que ano você nasceu</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="calcidade()">
         </p>
 
         <p>
@@ -27,9 +27,10 @@
 
     <script>
         function calcidade() {
-           let atual = new Date().getFullYear()
-           iidade.innerHTML = Number(atual) - Number(iano.value) 
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
         }
     </script>
+
 </body>
 </html>

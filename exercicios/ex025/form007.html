@@ -9,10 +9,10 @@
     <h1>Exemplo de Formilário</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label for="iest">Estado: </label>
+            <label for="iest">Estado</label>
             <select name="estado" id="iest">
 
-                <option value="" selected>--- Escolha ---</option>
+                <option value="">--- Escolha ---</option>
                 <optgroup label="Região Sudeste">
                     <option value="MG">Minas Gerais</option>
                     <option value="RJ">Rio de Janeiro</option>
@@ -32,18 +32,19 @@
             <input type="text" name="prof" id="iprof" list="lstprof">
             <datalist id="lstprof">
                 <option value="ADM">Administrador</option>
-                <option value="CONT">Contabilista</option>
+                <option value="CONT">Contabilizador</option>
                 <option value="DEV">Desenvolvedor</option>
                 <option value="PROF">Professor</option>
-            </datalist>
+            </datalist>  
         </p>
 
         <p>
-            <label for="img">Mensagem: </label>
-            <textarea name="msg" id="img" cols="30" rows="10" placeholder="Sua Mensagem..."></textarea>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua Mensagem Aqui"></textarea>
         </p>
 
         <p>
+
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
